@@ -1,0 +1,15 @@
+/* (file name example: main.css) */
+
+.background {
+  background-image: url('assets/img/doge.jpg');
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.background:not(:last-child) {
+  margin-bottom: 16px;
+}

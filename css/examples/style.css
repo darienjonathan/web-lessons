@@ -1,0 +1,22 @@
+/* (file name example: main.css) */
+
+button {
+  background-color: red;
+  color: white;
+}
+
+.blue-button {
+  background-color: blue;
+}
+
+.text {
+  color: red;
+}
+
+#special-text {
+  color: blue;
+}
+
+.text:last-child {
+  color: green;
+}
