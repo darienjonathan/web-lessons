@@ -1,0 +1,23 @@
+.parent,
+.child {
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.parent {
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: red;
+}
+
+/* DO NOT TOUCH OTHER STYLE DECLARATIONS EXCEPT THE COMMENTED-OUT width & height BELOW */
+
+.child {
+  /* width:  */
+  /* height:  */
+  margin-top: 20px;
+  background: blue;
+}

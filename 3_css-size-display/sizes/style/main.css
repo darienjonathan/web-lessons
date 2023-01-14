@@ -1,0 +1,88 @@
+section {
+  --spacing: 20px;
+  width: calc(100% - 2 * var(--spacing));
+  margin: var(--spacing);
+  padding: var(--spacing);
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+/* PX, PERCENTAGE */
+
+.px-percentage__parent, .px-percentage__child {
+  color: white;
+  background-color: var(--color);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.px-percentage__parent {
+  --color: blue;
+  font-size: 36px;
+  width: 300px;
+  height: 500px;
+}
+
+.px-percentage__child {
+  --color: red;
+  font-size: 50%; /* 50% * 48px = 24px */
+  width: 50%; /* 50% * 300px = 150px */
+  height: 50%; /* 50% * 500px = 250px */
+}
+
+/* REM */
+
+html {
+ font-size: 20px; /* default size is 16px */
+}
+.rem__parent {
+ font-size: 2rem; /* 2 * 10px = 20px */
+}
+.rem__child {
+ font-size: 0.8rem; /* 0.8 * 10px = 8px; unlike em and %, rem doesn’t care about parent’s font-size */
+}
+
+/* VW & VH */
+
+.vw-vh {
+  color: white;
+}
+.vw-vh:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.vw-vh__vw {
+  background: blue;
+  width: 50vw;
+  height: 50vw;
+}
+
+.vw-vh__vh {
+  background: red;
+  width: 50vh;
+  height: 50vh;
+}
+
+/* WIDTH, HEIGHT, MARGIN, PADDING */
+
+.sizes {
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  margin: 30px;
+  background: red;
+  color: white;
+}
+
+.sizes__content-box {
+  box-sizing: content-box;
+}
+
+.sizes__border-box {
+  box-sizing: border-box;
+}
