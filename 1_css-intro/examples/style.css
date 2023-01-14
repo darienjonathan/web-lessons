@@ -7,6 +7,11 @@ button {
 
 .blue-button {
   background-color: blue;
+  transition: background 0.15s linear;
+}
+
+.blue-button:hover {
+  background-color: black;
 }
 
 .text {
